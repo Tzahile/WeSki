@@ -53,7 +53,7 @@ const locationList = computed(() =>
   locationSearchOptions
 )
 const allHotels = computed(() => {
-  const sortedValue = searchResults.value.sort((a, b) => b.PricesInfo.AmountAfterTax - a.PricesInfo.AmountAfterTax)
+  const sortedValue = searchResults.value.sort((a, b) => a.PricesInfo.AmountAfterTax - b.PricesInfo.AmountAfterTax)
   return sortedValue
 })
 

@@ -3,7 +3,7 @@
     <v-responsive class="text-center fill-height">
       <v-row class="d-flex align-center">
         <v-col cols="3">
-          <v-select v-model="location" title="location" :items="locationList" item-title="name" item-value="id" />
+          <v-select v-model="location" label="location" :items="locationList" item-title="name" item-value="id" />
         </v-col>
         <v-col cols="3">
           <v-text-field label="group size" v-model="groupSize" />
@@ -13,7 +13,7 @@
         </v-col>
 
         <v-col cols="3">
-          <v-btn @click="search" variant="text">
+          <v-btn elevation="2" color="primary" @click="search" variant="text">
             <v-icon icon="mdi-magnify" size="large" start />
             Search
           </v-btn>
